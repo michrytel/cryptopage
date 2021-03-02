@@ -1,0 +1,76 @@
+@import "../utilities/mixins";
+@import "../utilities/colors";
+
+.opening {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1000px;
+  color: $color-text;
+
+
+  @include mobile {
+    height: auto;
+  }
+  &__content {
+    margin-top: 130px;
+    text-align: center;
+    height: 100%;
+
+    @include mobile {
+      margin-top: 100px;
+    }
+  }
+
+  &__header {
+    font-size: 3rem;
+    font-weight: 500;
+    border: 1px solid $color-hover;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 2em;
+    margin-right: 2em;
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+
+  &__heading {
+    margin-top: 20px;
+    margin-bottom: 38px;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 2rem;
+    border: 1px solid $color-hover;
+    background-color: rgba(0, 0, 0, 0.8);
+    @include mobile {
+      padding: 0 70px;
+      font-size: 1rem;
+    }
+  }
+}
+
+.opening__btn {
+  font-size: 1.5rem;
+  color: $color-text;
+  border: 1px solid $color-hover;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  padding: 16px 65px;
+  transition: 0.1s;
+
+  &:hover {
+    color: $color-hover;
+    border: 3px solid $color-hover;
+  }
+
+  @include mobile {
+    padding: 16px 0;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+  }
+}
+

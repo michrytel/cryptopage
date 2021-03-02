@@ -1,10 +1,20 @@
-
-
+import React from 'react';
+import Header from "./js/header";
+import Hero from "./js/hero";
+import Benefits from "./js/benefits";
+import CounterUp from "./js/counter";
 
 const App = () => {
-  return (
-    <h1>Hello React</h1>
-  );
+    return (
+        <>
+            <Header/>
+            <Hero/>
+            <Benefits/>
+            <CounterUp/>
+        </>
+    );
 }
 
 export default App;
+
+

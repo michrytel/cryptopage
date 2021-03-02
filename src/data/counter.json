@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "Wykwalifikowanych prelegentów",
+    "number": 16
+  },
+  {
+    "id": "2",
+    "title": "Wyszkolonych ludzi",
+    "number": 853
+  },
+  {
+    "id": "3",
+    "title": "Zrealizowanych godzin wykładów",
+    "number": 3210
+  },
+  {
+    "id": "4",
+    "title": "Zarobionych pieniędzy",
+    "number": 12003210
+  }
+]

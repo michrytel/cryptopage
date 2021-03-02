@@ -3,7 +3,10 @@
 @import "./styles/base/typography";
 
 // components
-@import "./styles/components/buttons";
+@import "styles/components/header";
+@import "styles/components/hero";
+@import "styles/components/benefits";
+@import "styles/components/counter";
 
 // layout
 // @import "./styles/layout/..."
@@ -14,6 +17,11 @@
 // utilities
 @import "./styles/utilities/variables";
 @import "./styles/utilities/mixins";
+@import "./styles/utilities/colors";
 
 // vendors
 // @import "./styles/vendors/..."
+
+
+
+

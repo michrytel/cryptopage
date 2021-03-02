@@ -1,0 +1,65 @@
+@import "../utilities/mixins";
+@import "../utilities/colors";
+
+.counter {
+  background-color: black;
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @include mobile {
+    padding: 3rem;
+  }
+  .counter__title {
+    padding: 0.8rem;
+    color: $color-text;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 2em;
+    margin-right: 2em;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+
+  }
+  .counter__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+      gap: 1em;
+      width: 50%;
+    }
+    .counter__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 20%;
+      padding: 2rem;
+      border: 1px solid $color-hover;
+      @include mobile {
+        width: 100%;
+        padding: 1rem;
+      }
+      .counter__element-title {
+        font-size: 1.5rem;
+        text-align: center;
+        color: $color-text;
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+      .counter-active {
+        text-align: center;
+        color: $color-hover;
+        font-size: 2rem;
+        @include mobile {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
