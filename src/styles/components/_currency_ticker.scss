@@ -1,0 +1,80 @@
+@import "../utilities/mixins";
+@import "../utilities/colors";
+
+.currency__ticker {
+  background-color: black;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .ticker__main-title {
+    text-align: center;
+    font-size: 2rem;
+    color: $color-text;
+    font-weight: 400;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+  .ticker {
+    display: flex;
+    justify-content: space-around;
+    @include mobile {
+      flex-direction: column;
+    }
+    .ticker__single {
+      margin-top: 100px;
+      padding: 2rem;
+      border: 1px solid $color-hover;
+      gap: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 15%;
+      @include mobile {
+        margin-top: 1em;
+        max-width: 50%;
+        align-self: center;
+      }
+
+      .ticker__title {
+        color: $color-text;
+        margin: 0.5em;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .ticker__img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .ticker__price {
+        color: $color-hover;
+        font-size: 1.2rem;
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+      .ticker__price-red {
+        color: #bc0000;
+        font-size: 1.2rem;
+        @include mobile {
+          font-size: 1rem;
+        }
+      }
+
+      .ticker__price-text {
+        color: $color-text;
+        font-size: 1.2rem;
+        @include mobile {
+          font-size: 1rem;
+        }
+
+      }
+    }
+  }
+}

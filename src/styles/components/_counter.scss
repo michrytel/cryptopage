@@ -3,13 +3,14 @@
 
 .counter {
   background-color: black;
-  padding: 6rem;
+  padding-bottom: 100px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   @include mobile {
-    padding: 3rem;
+    padding-top: 0;
   }
   .counter__title {
     padding: 0.8rem;
@@ -25,27 +26,30 @@
 
   }
   .counter__wrapper {
+    margin-top: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     @include mobile {
       flex-direction: column;
       gap: 1em;
       width: 50%;
+      margin-top: 1em;
     }
     .counter__list {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 20%;
+      min-width: 20%;
+      max-width: 25%;
       padding: 2rem;
       border: 1px solid $color-hover;
       @include mobile {
-        width: 100%;
+        max-width: 100%;
         padding: 1rem;
       }
       .counter__element-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
         color: $color-text;
         @include mobile {

@@ -1,0 +1,38 @@
+@import "../utilities/mixins";
+@import "../utilities/colors";
+
+.contact {
+  padding: 80px 100px 100px;
+  display: flex;
+  justify-content: center;
+  .contact__column {
+    width: 50%;
+    .contact__title {}
+    .contact__instruction {}
+    .contact__details {
+      margin-top: 1em;
+      gap: 2em;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .details__item {
+        a {}
+      }
+    }
+  }
+
+  .form {
+    .form__field {
+      .form__label {}
+      .form__input-name{}
+      .form__input-email{}
+    }
+    .form__checkbox-container {
+      .form__checkbox {
+        .checkbox {}
+        .consent__text {}
+      }
+    }
+    .contact__submit {}
+  }
+}

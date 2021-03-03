@@ -1,0 +1,39 @@
+@import "../utilities/colors";
+
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+  background-color: $color-background;
+  border-top: 0.1px solid $color-text;
+
+
+  .logo {
+    color: $color-extras;
+  }
+  .footer__icons {
+    margin-right: 32px;
+  }
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__copy {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    margin-top: 6px;
+    color: $color-extras;
+    margin-left: 32px;
+  }
+  
+}

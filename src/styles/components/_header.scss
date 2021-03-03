@@ -2,7 +2,9 @@
 @import "../utilities/colors";
 .header {
   height: 70px;
-  background-color: black;
+  background-color: $color-background;
+  border-bottom: 0.1px solid $color-text;
+
 
   &__container {
     display: flex;
