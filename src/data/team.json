@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "position": "CEO"
+  },
+  {
+    "id": "2",
+    "name": "Maria Stevens",
+    "position": "CEO"
+  },
+  {
+    "id": "3",
+    "name": "Alice Musk",
+    "position": "CTO"
+  },
+  {
+    "id": "4",
+    "name": "Raymond Raymonder",
+    "position": "Developer"
+  },
+  {
+    "id": "5",
+    "name": "Chris Brown",
+    "position": "Designer"
+  },
+  {
+    "id": "6",
+    "name": "Linda Lindor",
+    "position": "Marketing"
+  }
+]

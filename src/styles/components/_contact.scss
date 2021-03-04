@@ -2,37 +2,86 @@
 @import "../utilities/colors";
 
 .contact {
+  background-color: $color-extras;
   padding: 80px 100px 100px;
   display: flex;
   justify-content: center;
+  margin-bottom: 0;
+  gap: 1em;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .contact__column {
-    width: 50%;
+    min-width: 50%;
     .contact__title {}
-    .contact__instruction {}
+    .contact__instruction {
+      font-size: 1.5rem;
+
+    }
     .contact__details {
       margin-top: 1em;
       gap: 2em;
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      @include tablet {
+        justify-content: center;
+        flex-direction: column;
+      }
       .details__item {
-        a {}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        text-decoration: none;
+        color: $color-background;
+        font-size: 1.3rem;
+        img {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
   }
 
   .form {
+    display: flex;
+    flex-direction: column;
     .form__field {
-      .form__label {}
-      .form__input-name{}
-      .form__input-email{}
-    }
-    .form__checkbox-container {
-      .form__checkbox {
-        .checkbox {}
-        .consent__text {}
+      display: flex;
+      flex-direction: column;
+      .form__label {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .form__input-name{
+        font-size: 1.3em;
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        line-height: 2.625rem;
+        margin-bottom: 1em;
+
+      }
+      .form__input-email{
+        font-size: 1.3em;
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        line-height: 2.625rem;
+        margin-bottom: 1em;
       }
     }
-    .contact__submit {}
+    .contact__submit {
+      padding: 20px 97px;
+      margin-top: 20px;
+      background-color: transparent;
+      border: 2px solid black;
+      font-size: 1rem;
+      font-weight: bold;
+    }
   }
 }

@@ -1,8 +1,25 @@
-import React from "react"
+import React, {useState} from "react"
+import mail from "../assets/Mail Icon.svg"
+import phone from "../assets/Phone Icon.svg"
+
 
 const Contact = () => {
-
-
+        const [form, setForm] = useState({ name: "", mail: "" });
+        const [data, setData] = useState([])
+        const handleChange = (e) => {
+            const {name, value} = e.target;
+            setForm(prevState => {
+                return {
+                    ...prevState,
+                    [name]: value
+                }
+            });
+        };
+        const sendBtn = (e) => {
+            e.preventDefault()
+            setData(prev => [...prev, form])
+            console.log(data);
+        }
 
     return (
         <section className="contact" id="contact">
@@ -12,46 +29,29 @@ const Contact = () => {
                     Napisz wiadomość lub zostaw swój adres e-mail, skontaktujemy się w ciągu 24 godzin
                 </p>
                 <div className="contact__details">
-                    <a href="mailto:info@bestshop.xyz" className="details__item">
-                        <img src="assets/Mail%20Icon.svg" alt="mail"/>
+                    <a href="mailto:info@cryptokurs.xyz" className="details__item">
+                        <img src={mail} alt="mail"/>
                         info@cryptokurs.xyz
                     </a>
 
                     <a href="tel:123456789" className="details__item">
-                        <img src="assets/Phone%20Icon.svg" alt="phone"/>
+                        <img src={phone} alt="phone"/>
                         123 456 789
                     </a>
                 </div>
             </div>
-
             <div className="contact__column">
                 <form className="form">
                     <div className="form__field">
-                        <label className="form__label" htmlFor="name">Imie</label>
-                        <input type="text" className="form__input-name" id="name"/>
+                        <label className="form__label" htmlFor="name">Imię</label>
+                        <input type="text" className="form__input-name" id="name" name="name" value={form.name} onChange={handleChange}/>
                     </div>
 
                     <div className="form__field">
                         <label className="form__label" htmlFor="email">Mail</label>
-                        <input type="email" className="form__input-email" id="email"/>
+                        <input type="email" className="form__input-email" id="email" name="mail" value={form.mail} onChange={handleChange}/>
                     </div>
-
-                    <div className="form__checkbox-container">
-                        <label className="form__checkbox">
-                            <input type="checkbox"/>
-                            <span className="checkbox"></span>
-                            <p className="consent__text">
-                                I hereby give consent for my personal data included in my
-                                application to be processed for the purposes of the recruitment
-                                process under the European Parliament’s and Council of the
-                                European Union Regulation on the Protection of Natural Persons as
-                                of 27 April 2016, with regard to the processing of personal data
-                                and on the free movement of such data, and repealing Directive
-                                95/46/EC (Data Protection Directive)
-                            </p>
-                        </label>
-                    </div>
-                    <button type="submit" className="contact__submit">Wyślij</button>
+                    <button type="submit" className="contact__submit" onClick={sendBtn}>Wyślij</button>
                 </form>
             </div>
         </section>

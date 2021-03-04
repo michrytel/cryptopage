@@ -3,6 +3,7 @@ import axios from "axios";
 
 
 
+
 const CurrencyTicker = () => {
     const [coins, setCoins] = useState([])
     useEffect(() => {

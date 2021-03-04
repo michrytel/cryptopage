@@ -6,6 +6,7 @@ import CounterUp from "./js/counter";
 import Footer from "./js/footer";
 import CurrencyTicker from "./js/currencyTicker";
 import Contact from "./js/contact";
+import TeamContent from "./js/team";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
             <Benefits/>
             <CounterUp/>
             <Contact/>
+            <TeamContent/>
             <Footer/>
         </>
     );
