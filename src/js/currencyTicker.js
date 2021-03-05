@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import CurrencyCalculator from "./calculator";
 
 
 
@@ -30,6 +31,7 @@ const CurrencyTicker = () => {
                 )
                 })}
             </div>
+            <CurrencyCalculator/>
         </div>
     );
 };

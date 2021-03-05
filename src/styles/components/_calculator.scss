@@ -1,0 +1,67 @@
+@import "../utilities/mixins";
+@import "../utilities/colors";
+
+.calculator {
+  color: $color-text;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+
+  p {
+    font-size: 2rem;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+  .calc__box {
+    border: 1px solid $color-hover;
+    padding: 2em;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+    }
+    .calc__input {
+      background: transparent;
+      font-size: 1.3rem;
+      border: none;
+      border-bottom: 1px solid $color-hover;
+      color: $color-text;
+      font-weight: bold;
+      text-align: center;
+
+      &:focus { outline: none; }
+    }
+    span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .calc__select {
+      select {
+        background: transparent;
+        border: 1px solid $color-hover;
+        font-size: 1.3rem;
+        color: $color-hover;
+        option{}
+      }
+    }
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
