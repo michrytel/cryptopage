@@ -1,28 +1,31 @@
 // base
 @import "./styles/base/normalize";
 @import "./styles/base/typography";
+@import "styles/base/_swiper.css";
+
+// utilities
+@import "./styles/utilities/variables";
+@import "./styles/utilities/mixins";
+@import "./styles/utilities/colors";
 
 // components
 @import "styles/components/header";
-@import "styles/components/hero";
-@import "styles/components/benefits";
-@import "styles/components/counter";
+@import "styles/components/Main/hero";
+@import "styles/components/Main/benefits";
+@import "styles/components/Main/counter_up";
 @import "styles/components/footer";
-@import "styles/components/currency_ticker";
-@import "styles/components/contact";
-@import "styles/components/team";
-@import "styles/components/calculator";
-
+@import "styles/components/Courses/currency_ticker";
+@import "styles/components/SignUp/contact";
+@import "styles/components/SignUp/team_content";
+@import "styles/components/Courses/currency_calculator";
+@import "styles/components/SignUp/contact_map-address";
+@import "styles/components/Main/BrandSwiper";
 // layout
 // @import "./styles/layout/..."
 
 // pages
 // @import "./styles/pages/..."
 
-// utilities
-@import "./styles/utilities/variables";
-@import "./styles/utilities/mixins";
-@import "./styles/utilities/colors";
 
 // vendors
 // @import "./styles/vendors/..."

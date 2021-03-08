@@ -1,20 +1,23 @@
 import React from "react"
-import teamData from "../data/team.json"
-import teamImage from "../assets/team.jpg"
-import teamTitle from "../assets/teamtitle.png"
+import teamData from "../../../data/team.json"
+import teamImage from "../../../assets/team.jpg"
+import teamTitle from "../../../assets/icons/teamtitle.png"
 
 const TeamContent = () => {
     return (
         <section className="team">
             <div className="team__container">
+                <h2 className="team__title">
+                    Poznaj nas!
+                </h2>
                 <img
                     src={teamTitle}
                     alt="team title"
                     className="team__title-image"
                 />
-                <h2 className="team__title">
+                <strong className="team__title">
                     Zespół CryptoKurs
-                </h2>
+                </strong>
                 <p className="team__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque eligendi fugit minima nostrum obcaecati odit officia porro possimus, provident quo quos temporibus vel voluptates?</p>
 
                 <div className="team__wrapper">

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import CurrencyCalculator from "./calculator";
+import CurrencyCalculator from "./CurrencyCalculator";
 
 
 

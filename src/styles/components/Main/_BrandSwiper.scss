@@ -1,0 +1,31 @@
+.brands__container {
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  .brands__title {
+    color: $color-extras;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+  .brands__swiper {
+    border-top: 2px solid $color-extras;
+    border-bottom: 2px solid $color-extras;
+    padding: 2em;
+    .brands__swiper-list {
+      li {
+        max-width: 200px;
+        max-height: 150px;
+        a {
+          margin: auto;
+        }
+        img {
+          margin: auto;
+        }
+
+      }
+    }
+
+  }
+}

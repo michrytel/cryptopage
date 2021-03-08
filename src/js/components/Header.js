@@ -13,10 +13,9 @@ const Header = () => {
                             <span></span>
                         </label>
                         <ul className="header__nav">
-                            <li className="nav__element"><a href="#why-us" className="nav__link">O nas</a></li>
-                            <li className="nav__element"><a href="#benefits" className="nav__link">Korzyści</a></li>
-                            <li className="nav__element"><a href="#prices" className="nav__link">Cennik</a></li>
-                            <li className="nav__element"><a href="#contact" className="nav__link">Kontakt</a></li>
+                            <li className="nav__element"><a href="/" className="nav__link">Strona główna</a></li>
+                            <li className="nav__element"><a href="/courses" className="nav__link">Szkolenia</a></li>
+                            <li className="nav__element"><a href="/signup" className="nav__link">Zapisz się!</a></li>
                         </ul>
                 </nav>
             </div>

@@ -1,11 +1,6 @@
-@import "../utilities/mixins";
-@import "../utilities/colors";
-
 .currency__ticker {
   background-color: black;
-
-  padding-top: 50px;
-
+  padding-top: 2em;
 
   @include mobile {
     padding-bottom: 0;
@@ -27,7 +22,7 @@
       flex-direction: column;
     }
     .ticker__single {
-      margin-top: 100px;
+      margin-top: 50px;
       padding: 2rem;
       border: 1px solid $color-hover;
       gap: 1em;

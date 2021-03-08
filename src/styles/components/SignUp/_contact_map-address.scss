@@ -1,0 +1,28 @@
+
+.contact__address {
+  text-align: center;
+  .map__container {
+    margin: 5em;
+    border: 5px solid $color-hover;
+
+    .google__map {
+    }
+
+    .google__map:first-child {
+      position: relative !important;
+      min-height: 500px !important;
+    }
+  }
+}
+.address__container {
+  .address__info {
+    margin-top: 2em;
+    color: $color-text;
+    font-size: 2rem;
+  }
+  .address__details {
+    margin-top: 1em;
+    color: $color-text;
+    font-size: 1.5rem;
+  }
+}

@@ -1,25 +1,25 @@
 import React from 'react';
-import Header from "./js/header";
-import Hero from "./js/hero";
-import Benefits from "./js/benefits";
-import CounterUp from "./js/counter";
-import Footer from "./js/footer";
-import CurrencyTicker from "./js/currencyTicker";
-import Contact from "./js/contact";
-import TeamContent from "./js/team";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Main from "./js/Main";
+import SignUp from "./js/SignUp";
+import Courses from "./js/Courses";
+import Header from "./js/components/Header";
+import Footer from "./js/components/Footer";
 
 const App = () => {
     return (
         <>
             <Header/>
-            <Hero/>
-            <CurrencyTicker/>
-            <Benefits/>
-            <CounterUp/>
-            <Contact/>
-            <TeamContent/>
+            <Router>
+                <Switch>
+                    <Route path="/courses" component={Courses}/>
+                    <Route path="/signup" component={SignUp}/>
+                    <Route path="/" component={Main}/>
+                </Switch>
+            </Router>
             <Footer/>
         </>
+
     );
 }
 
