@@ -34,7 +34,7 @@ const BrandSwiper = () => {
                         <Swiper {...params}>
                             {Data.map((single, key) => {
                                 return (
-                                    <li className="swiper-slide">
+                                    <li className="swiper-slide" key={key}>
                                         <a
                                             href={single.url}
                                             target="_blank"

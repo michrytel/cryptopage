@@ -2,7 +2,6 @@ import React from "react"
 import teamData from "../../../data/team.json"
 import teamImage from "../../../assets/team.jpg"
 import teamTitle from "../../../assets/icons/teamtitle.png"
-
 const TeamContent = () => {
     return (
         <section className="team">

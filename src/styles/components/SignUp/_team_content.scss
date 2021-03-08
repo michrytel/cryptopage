@@ -10,9 +10,14 @@
     align-items: center;
     flex-direction: column;
     .team__title-image {
-      width: 550px;
-      height: 300px;
+      max-width: 550px;
+      max-height: 300px;
       margin-bottom: 1em;
+      @include mobile {
+        max-height: 220px;
+        max-width: 400px;
+
+      }
     }
     .team__title {
       font-size: 2rem;
