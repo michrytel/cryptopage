@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import CurrencyCalculator from "./CurrencyCalculator";
+import CurrencyTable from "./CurrencyTable";
 
 
 
@@ -15,7 +16,7 @@ const CurrencyTicker = () => {
     }, [])
     return (
         <div className="currency__ticker">
-            <h3 className="ticker__main-title">Aktualne kursy kryptowalut:</h3>
+            <h3 className="ticker__main-title">Aktualne kursy najpopularniejszych kryptowalut:</h3>
             <div className="ticker">
                 {
                 coins.map((single, key) => {
@@ -26,12 +27,13 @@ const CurrencyTicker = () => {
                             <span className="ticker__price-text">Aktualna cena:</span>
                             <span className="ticker__price">{single.current_price} zł</span>
                             <p className="ticker__price-text">Zmiana w ciągu 24h:</p>
-                            {single.price_change_24h > 0 ? <p className="ticker__price">{single.price_change_24h} zł</p> : <p className="ticker__price-red">{single.price_change_24h} zł</p>}
+                            {single.price_change_24h > 0 ? <p className="ticker__price">{single.price_change_percentage_24h.toFixed(2)}%</p> : <p className="ticker__price-red">{single.price_change_percentage_24h.toFixed(2)}%</p>}
                     </div>
                 )
                 })}
             </div>
             <CurrencyCalculator/>
+            <CurrencyTable/>
         </div>
     );
 };

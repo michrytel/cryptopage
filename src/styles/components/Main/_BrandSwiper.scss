@@ -1,18 +1,18 @@
 .brands__container {
-  padding-bottom: 1em;
+  padding-top: 4em;
+  padding-bottom: 0.8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   .brands__title {
-    color: $color-extras;
-    font-size: 1.5em;
-    padding-bottom: 1em;
+    color: rgb(104, 116, 157);
+    font-size: 1.3em;
+    padding-bottom: 0.5em;
   }
   .brands__swiper {
-    border-top: 2px solid $color-extras;
-    border-bottom: 2px solid $color-extras;
-    padding: 2em;
+    border-top: 1px solid $color-hover;
+    padding-top: 2em;
     .brands__swiper-list {
       li {
         max-width: 200px;

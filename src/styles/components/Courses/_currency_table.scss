@@ -1,0 +1,121 @@
+.currency__table-container {
+  background-color: $color-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $color-text;
+  border: 1px solid $color-extras   ;
+  margin: 4em;
+  .coin__search {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      margin-top: 3em;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .coin__search-input {
+      width: 300px;
+      height: 50px;
+      border: 1px solid $color-hover;
+      background: transparent;
+      color: $color-hover;
+      text-align: center;
+    }
+    .coin__search-input::placeholder {
+      text-align: center;
+      color: $color-hover;
+    }
+    .coin__search-input:focus {
+      outline-offset: 0;
+      outline: none;
+    }
+  }
+}
+.coin__list {
+  max-height: 1000px;
+  overflow: scroll;
+  max-width: 100%;
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 1em;
+  .coin__container {
+    .coin__row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      border-bottom: 1px solid $color-hover;
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      .coin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        gap: 1em;
+        @include mobile {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        img {
+          height: 30px;
+          width: 30px;
+          @include mobile {
+            height: 50px;
+            width: 50px;
+          }
+        }
+
+        h3 {
+          font-size: 1em;
+          max-width: 150px;
+        }
+      }
+
+      .coin__data {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+        @include mobile {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 1em;
+          gap: 1em;
+
+        }
+        .coin__price {
+          width: 110px;
+        }
+        .coin__percent {
+          max-width: 80%;
+        }
+        .coin__marketcap {
+          max-width: 240px;
+          @include mobile {
+            max-width: 80%;
+          }
+        }
+        .red {
+          color: red;
+        }
+        .green {
+          color: $color-hover;
+        }
+      }
+    }
+  }
+}
