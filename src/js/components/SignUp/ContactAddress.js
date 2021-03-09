@@ -5,8 +5,8 @@ const ContactAddress = () => {
     return (
         <div className="contact__address">
             <div className="address__container">
-                <p className="address__info">Jeśli chcesz uzyskać więcej informacji, zapraszamy do naszej placówki</p>
-                <p className="address__details">Jesteśmy otwarci codziennie od 9 do 21 </p>
+                <p className="address__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quisquam.</p>
+                <p className="address__details">Lorem ipsum dolor sit amet.</p>
             </div>
             <div className="map__container">
                 <div className="google__map">

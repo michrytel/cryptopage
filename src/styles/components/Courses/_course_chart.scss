@@ -7,12 +7,13 @@
   align-items: center;
   margin-bottom: 50px;
   @include mobile {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .course__chart {
     width: 40%;
     @include mobile {
       width: 80%;
+      padding-top: 1em;
     }
     img {
     }

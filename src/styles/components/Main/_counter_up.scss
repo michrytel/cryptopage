@@ -31,8 +31,8 @@
     @include mobile {
       flex-direction: column;
       gap: 1em;
-      width: 50%;
-      margin-top: 1em;
+      width: 80%;
+      margin-top: 0;
     }
     .counter__list {
       display: flex;

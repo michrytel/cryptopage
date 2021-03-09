@@ -1,17 +1,19 @@
 
 .course__info-container {
-  padding-top: 7em;
+  padding-top: 3em;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 50px;
   @include mobile {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-top: 1em;
   }
   .course__info-chart {
     width: 30%;
     @include mobile {
       width: 80%;
+      padding-top: 1em;
     }
     img {
     }

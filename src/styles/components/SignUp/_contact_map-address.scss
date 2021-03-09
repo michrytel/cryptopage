@@ -4,6 +4,9 @@
   .map__container {
     margin: 5em;
     border: 5px solid $color-hover;
+    @include mobile {
+      margin: 1em;
+    }
 
     .google__map {
     }

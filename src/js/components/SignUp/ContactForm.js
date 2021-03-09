@@ -24,9 +24,9 @@ const ContactForm = () => {
 
             <section className="contact" id="contact">
                 <div className="contact__column">
-                    <h2 className="contact__title">Masz jakieś pytania lub chcesz się zapisać na kurs?</h2>
+                    <h2 className="contact__title">Lorem ipsum dolor sit?</h2>
                     <p className="contact__instruction">
-                        Napisz wiadomość lub zostaw swój adres e-mail, skontaktujemy się w ciągu 24 godzin
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eos?
                     </p>
                     <div className="contact__details">
                         <a href="mailto:info@cryptokurs.xyz" className="details__item">

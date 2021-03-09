@@ -7,6 +7,9 @@
   color: $color-text;
   border: 1px solid $color-extras   ;
   margin: 4em;
+  @include mobile {
+    margin: 2em;
+  }
   .coin__search {
     margin-bottom: 50px;
     display: flex;

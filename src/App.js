@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Main from "./js/Main";
 import SignUp from "./js/SignUp";
 import Courses from "./js/Courses";
-import Header from "./js/components/Header";
-import Footer from "./js/components/Footer";
+import Header from "./js/Header";
+import Footer from "./js/Footer";
 
 const App = () => {
     return (

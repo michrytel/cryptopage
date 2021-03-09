@@ -24,6 +24,7 @@
     align-items: center;
     @include mobile {
       flex-direction: column;
+      max-width: 80%;
     }
     .calc__input {
       background: transparent;
