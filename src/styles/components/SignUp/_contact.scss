@@ -54,6 +54,9 @@
         font-size: 1.3em;
         text-transform: uppercase;
         font-weight: bold;
+        @include mobile {
+          margin-top: 1em;
+        }
       }
       .form__input-name{
         font-size: 1.3em;

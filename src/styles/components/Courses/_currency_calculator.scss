@@ -34,6 +34,9 @@
       color: $color-text;
       font-weight: bold;
       text-align: center;
+      @include mobile {
+        max-width: 150px;
+      }
 
       &:focus { outline: none; }
     }

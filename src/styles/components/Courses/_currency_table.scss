@@ -20,6 +20,9 @@
       margin-top: 3em;
       margin-bottom: 32px;
       text-align: center;
+      @include mobile {
+        font-size: 1.2em;
+      }
     }
     .coin__search-input {
       max-width: 300px;
@@ -28,6 +31,9 @@
       background: transparent;
       color: $color-hover;
       text-align: center;
+      @include mobile {
+        max-width: 100px;
+      }
     }
     .coin__search-input::placeholder {
       text-align: center;
@@ -70,6 +76,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          padding-top: 1em;
         }
 
         img {
