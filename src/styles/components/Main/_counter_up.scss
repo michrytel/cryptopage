@@ -73,6 +73,9 @@
     max-width: 20%;
     border-bottom: 2px solid $color-hover;
     padding-bottom: 0.5em;
+    @include mobile {
+      max-width: 80%;
+    }
 
     span {
       font-weight: bold;
