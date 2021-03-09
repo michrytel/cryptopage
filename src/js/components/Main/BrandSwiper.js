@@ -22,7 +22,7 @@ const BrandSwiper = () => {
                 slidesPerView: 1
             }
         },
-        spaceBetween: 150
+        spaceBetween: 80,
     };
     return (
         <div className="brands__container">
@@ -32,7 +32,7 @@ const BrandSwiper = () => {
                         <Swiper {...params}>
                             {Data.map((single, key) => {
                                 return (
-                                    <li className="swiper-slide" key={key}>
+                                    <li className="swiper-slide" key={key} data-swiper-autoplay="2000">
                                         <a
                                             href={single.url}
                                             target="_blank"
