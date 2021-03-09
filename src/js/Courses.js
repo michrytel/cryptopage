@@ -2,7 +2,6 @@ import React from 'react';
 import CurrencyTicker from "./components/Courses/CurrencyTicker/CurrencyTicker";
 import CourseInfo from "./components/Courses/CourseInfo";
 import CourseChart from "./components/Courses/CourseChart";
-
 const Courses = () => {
     return (
         <>
@@ -15,5 +14,4 @@ const Courses = () => {
         </>
     )
 }
-
 export default Courses

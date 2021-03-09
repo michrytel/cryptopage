@@ -1,6 +1,5 @@
 import React from "react";
 import CourseIntro from "../../../assets/coursesintro.png"
-
 const CourseInfo = () => {
     return (
         <section className="course__info-container">
@@ -30,5 +29,4 @@ const CourseInfo = () => {
         </section>
     );
 }
-
 export default CourseInfo

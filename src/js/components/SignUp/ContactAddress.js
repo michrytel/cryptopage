@@ -1,6 +1,5 @@
 import React from 'react';
 import ContactMap from "./ContactMap";
-
 const ContactAddress = () => {
     return (
         <div className="contact__address">

@@ -1,4 +1,3 @@
-
 .contact__address {
   text-align: center;
   .map__container {
@@ -7,10 +6,8 @@
     @include mobile {
       margin: 1em;
     }
-
     .google__map {
     }
-
     .google__map:first-child {
       position: relative !important;
       min-height: 500px !important;

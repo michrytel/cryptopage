@@ -2,10 +2,6 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import CurrencyCalculator from "./CurrencyCalculator";
 import CurrencyTable from "./CurrencyTable";
-
-
-
-
 const CurrencyTicker = () => {
     const [coins, setCoins] = useState([])
     useEffect(() => {
@@ -37,6 +33,4 @@ const CurrencyTicker = () => {
         </div>
     );
 };
-
-
 export default CurrencyTicker

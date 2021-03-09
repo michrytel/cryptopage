@@ -1,7 +1,6 @@
 import React from "react";
 import facebook from "../assets/icons/facebook.svg"
 import twitter from "../assets/icons/twitter.svg"
-
 const Footer = () => {
     return (
         <footer className="footer">
@@ -18,5 +17,4 @@ const Footer = () => {
         </footer>
     )
 }
-
 export default Footer

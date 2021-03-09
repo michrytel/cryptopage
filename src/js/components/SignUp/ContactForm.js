@@ -1,7 +1,6 @@
 import React, {useState} from "react"
 import mail from "../../../assets/icons/mailicon.svg"
 import phone from "../../../assets/icons/phoneicon.svg"
-
 const ContactForm = () => {
     const [form, setForm] = useState({name: "", mail: ""});
     const [data, setData] = useState([])
@@ -19,9 +18,7 @@ const ContactForm = () => {
         setData(prev => [...prev, form])
         console.log(data);
     }
-
     return (
-
             <section className="contact" id="contact">
                 <div className="contact__column">
                     <h2 className="contact__title">Lorem ipsum dolor sit?</h2>
@@ -59,5 +56,4 @@ const ContactForm = () => {
             </section>
     )
 }
-
 export default ContactForm

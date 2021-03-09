@@ -1,14 +1,10 @@
 import React from "react";
 import {Map, GoogleApiWrapper, Marker} from "google-maps-react";
-
-
 const ContactMap = props => {
     const mapStyles = {
         width: "100%",
         minHeight: "200px"
     };
-
-
     return (
             <Map className="map"
                 google={props.google}
@@ -19,8 +15,6 @@ const ContactMap = props => {
             </Map>
     );
 };
-
-
 export default GoogleApiWrapper({
     apiKey: (process.env.REACT_APP_API_KEY)
 })(ContactMap)

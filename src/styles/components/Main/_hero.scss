@@ -33,6 +33,8 @@
     margin-right: 2em;
     @include mobile {
       font-size: 1.5rem;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
     }
   }
 

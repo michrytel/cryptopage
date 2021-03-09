@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-
 const CurrencyCalculator = () => {
     const [coins, setCoins] = useState([])
     const [selected, setSelected] = useState(0)
@@ -8,8 +7,6 @@ const CurrencyCalculator = () => {
     const [output, setOutput] = useState(0)
     const [fromPLN, setFromPLN] = useState(true)
     const [result, setResult] = useState(0)
-
-
     useEffect(() => {
         axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=pln&ids=bitcoin%2C%20ethereum%2C%20dogecoin%2C%20chainlink%2C%20ripple&order=market_cap_desc&per_page=100&page=1&sparkline=false`)
             .then(res => {
@@ -40,8 +37,6 @@ const CurrencyCalculator = () => {
             setResult((+e.target.value * (1 / selected)).toFixed(5))
         }
     }
-
-
     return (
         <div className="calculator">
             <p>Przelicznik</p>
@@ -118,5 +113,4 @@ const CurrencyCalculator = () => {
         </div>
     );
 };
-
 export default CurrencyCalculator;

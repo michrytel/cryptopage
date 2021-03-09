@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Coin = ({name, image, symbol, price, priceChange, marketcap}) => {
     return (
         <div className="coin__container">
@@ -19,5 +18,4 @@ const Coin = ({name, image, symbol, price, priceChange, marketcap}) => {
         </div>
     )
 }
-
 export default Coin

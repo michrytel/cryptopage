@@ -1,7 +1,6 @@
 import blockchain from "../../../assets/icons/blockchain.svg"
 import chart from "../../../assets/icons/chart.svg"
 import btc from "../../../assets/icons/bitcoin.svg"
-
 const Benefits = () => {
     return (
         <section className="benefits">
@@ -39,5 +38,4 @@ const Benefits = () => {
         </section>
     )
 }
-
 export default Benefits

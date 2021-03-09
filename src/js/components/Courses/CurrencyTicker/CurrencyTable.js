@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import Coin from "./Coin";
-
 const CurrencyTable = () => {
     const [coins, setCoins] = useState([])
     const [search, setSearch] = useState('')
@@ -15,7 +14,6 @@ const CurrencyTable = () => {
         setSearch(e.target.value)
     }
     const filteredCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
-
     return (
         <div className="currency__table-container">
             <div className="coin__search">
@@ -41,5 +39,4 @@ const CurrencyTable = () => {
         </div>
     )
 }
-
 export default CurrencyTable

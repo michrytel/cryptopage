@@ -47,5 +47,4 @@ const TeamContent = () => {
         </section>
     );
 };
-
 export default TeamContent;

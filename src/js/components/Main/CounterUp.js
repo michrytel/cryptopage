@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import counterUpData from "../../../data/counter.json";
 import CountUp from "react-countup";
-
 const CounterUp = () => {
     const [didViewCountUp, setDidViewCountUp] = useState(false);
     const onVisibilityChange = isVisible => {

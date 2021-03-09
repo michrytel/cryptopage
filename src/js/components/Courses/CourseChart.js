@@ -1,6 +1,5 @@
 import React from "react";
 import Chartimg from "../../../assets/courseschart.jpeg"
-
 const CourseChart = () => {
     return (
         <section className="course__chart-container">
@@ -30,5 +29,4 @@ const CourseChart = () => {
         </section>
     );
 }
-
 export default CourseChart

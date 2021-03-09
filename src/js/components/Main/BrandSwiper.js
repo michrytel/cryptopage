@@ -1,8 +1,6 @@
 import React from "react";
 import Swiper from "react-id-swiper";
 import Data from "../../../data/BrandSwiperData";
-
-
 const BrandSwiper = () => {
     const params = {
         loop: true,
@@ -24,7 +22,7 @@ const BrandSwiper = () => {
                 slidesPerView: 1
             }
         },
-        spaceBetween: 250
+        spaceBetween: 150
     };
     return (
         <div className="brands__container">
