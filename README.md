@@ -3,3 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Technologies used
 React & SASS.
+
+
+#### Live
+https://cryptopage.herokuapp.com/
