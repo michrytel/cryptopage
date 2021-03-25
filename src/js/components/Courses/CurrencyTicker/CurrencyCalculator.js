@@ -108,7 +108,7 @@ const CurrencyCalculator = () => {
                         }}
 
                     />}
-                <span>zł</span>
+                <span>PLN</span>
             </div>
         </div>
     );

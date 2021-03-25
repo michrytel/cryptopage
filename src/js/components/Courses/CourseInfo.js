@@ -7,7 +7,7 @@ const CourseInfo = () => {
                         <img src={CourseIntro} alt="service images"/>
                 </div>
                 <div className="course__info-content">
-                    <h3>Jak wyglądają nasze szkolenia?</h3>
+                    <h3>How our meetings look like?</h3>
                     <p>
                         Sed ut perspiciatis unde omnis iste natus error voluptatem
                         accusantium doloremque laudantium, totam aperiam, eaque ipsa

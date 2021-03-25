@@ -40,7 +40,7 @@ const ContactForm = () => {
                 <div className="contact__column">
                     <form className="form">
                         <div className="form__field">
-                            <label className="form__label" htmlFor="name">Imię</label>
+                            <label className="form__label" htmlFor="name">Name</label>
                             <input type="text" className="form__input-name" id="name" name="name" value={form.name}
                                    onChange={handleChange}/>
                         </div>
@@ -50,7 +50,7 @@ const ContactForm = () => {
                             <input type="email" className="form__input-email" id="email" name="mail" value={form.mail}
                                    onChange={handleChange}/>
                         </div>
-                        <button type="submit" className="contact__submit" onClick={sendBtn}>Wyślij</button>
+                        <button type="submit" className="contact__submit" onClick={sendBtn}>Send</button>
                     </form>
                 </div>
             </section>

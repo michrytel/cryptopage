@@ -8,10 +8,10 @@ const Coin = ({name, image, symbol, price, priceChange, marketcap}) => {
                     <h3>{name}</h3>
                 </div>
                 <div className="coin__data">
-                    <p className="coin__price">{price} zł</p>
-                    {priceChange < 0 ? (<p className="coin-percent red">Zmiana w ciągu 24h: {priceChange.toFixed(2)}%</p>) :
-                        (<p className="coin-percent green">Zmiana w ciągu 24h: {priceChange.toFixed(2)}%</p>)}
-                    <p className="coin__marketcap">Całkowity wolumen handlowy: {marketcap} zł</p>
+                    <p className="coin__price">{price} PLN</p>
+                    {priceChange < 0 ? (<p className="coin-percent red">24h change: {priceChange.toFixed(2)}%</p>) :
+                        (<p className="coin-percent green">24h change: {priceChange.toFixed(2)}%</p>)}
+                    <p className="coin__marketcap">M-cap: {marketcap} PLN</p>
 
                 </div>
             </div>

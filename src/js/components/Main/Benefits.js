@@ -5,32 +5,30 @@ const Benefits = () => {
     return (
         <section className="benefits">
             <div className="container">
-                <h2 className="benefits__header">Przekazujemy kompleksową wiedzę potrzebną do rozsądnego
-                    inwestowania</h2>
-                <p className="benefits__header">Nasi kursanci poznają od podszewki:</p>
+                <h2 className="benefits__header">We provide comprehensive knowledge needed to invest wisely</h2>
+                <p className="benefits__header">Our students will learn inside out:</p>
                 <div className="benefits__container">
                     <div className="benefits__single">
                         <img src={blockchain} alt="blockchain" className="benefits__img"/>
-                        <div className="benefits__title">Technologie blockchain</div>
-                        <div className="benefits__description">Bitcoin i niemal wszystkie pozostałe kryptowaluty są
-                            oparte na technologii blockchain. Na czym ona polega? Jak działa? Jakie może mieć
-                            zastosowanie w codziennym życiu? Zrozum blockchain, zanim zainwestujesz w kryptowaluty.
+                        <div className="benefits__title">Technology blockchain</div>
+                        <div className="benefits__description">
+                            Bitcoin and almost all other cryptocurrencies are based on blockchain technology. What is it about? How it works? How can it apply in everyday life? Understand blockchain before investing in cryptocurrencies.
                         </div>
                     </div>
                     <div className="benefits__single">
                         <img src={chart} alt="trading" className="benefits__img"/>
-                        <div className="benefits__title">Tajniki analizy technicznej</div>
-                        <div className="benefits__description">Analiza techniczna, to ponad stuletnia szkoła analizy
-                            instrumentów finansowych, formacji świecowych i cen za pomocą różnych metod technicznych. AT
-                            w przypadku kryptowalut jest nadzwyczaj efektywna. Jak jej użyć?
+                        <div className="benefits__title">Secrets of technical analysis</div>
+                        <div className="benefits__description">Technical analysis is over a century-old school of analysis
+                            financial instruments, candlestick patterns and prices using various technical methods. AT
+                            in the case of cryptocurrencies, it is extremely effective. How to use it?
                         </div>
                     </div>
                     <div className="benefits__single">
                         <img src={btc} alt="bitcoin" className="benefits__img"/>
-                        <div className="benefits__title">Świat kryptowalut</div>
-                        <div className="benefits__description">Czym są kryptowaluty? Sposobem na zarabianie w
-                            internecie? Oszustwem? A może rewolucją w świecie finansów, która dotknie tradycyjną
-                            bankowość i giełdę? Skąd się bierze ich wartość i popularność?
+                        <div className="benefits__title">The world of cryptocurrencies</div>
+                        <div className="benefits__description">What are cryptocurrencies? A way to earn in
+                            on the internet? A scam? Or maybe a revolution in the world of finance that will affect the traditional
+                            banking and stock exchange? Where do their value and popularity come from?
                         </div>
                     </div>
                 </div>

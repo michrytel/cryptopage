@@ -7,7 +7,7 @@ const CourseChart = () => {
                 <img src={Chartimg} alt="service images"/>
             </div>
             <div className="course__chart-content">
-                <h3>Tematyka zajęć</h3>
+                <h3>Topic of meetings</h3>
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error voluptatem
                     accusantium doloremque laudantium, totam aperiam, eaque ipsa

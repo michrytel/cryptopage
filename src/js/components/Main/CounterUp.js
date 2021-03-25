@@ -11,7 +11,7 @@ const CounterUp = () => {
     };
     return (
         <div className="counter">
-            <h2 className="counter__title">Mamy już dokładnie tyle:</h2>
+            <h2 className="counter__title">Our stats:</h2>
             <div className="counter__wrapper">
                 {counterUpData.map((single) => {
                     return (
@@ -25,7 +25,7 @@ const CounterUp = () => {
                     </div>
                     )})}
             </div>
-            <a href="/signup" className="counter__text">Kliknij<span> tu </span> i zacznij swoją przygodę w świecie krypto!</a>
+            <a href="/signup" className="counter__text">Click<span> here </span> and start your crypto adventure!</a>
         </div>
     );
 };

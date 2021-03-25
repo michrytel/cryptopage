@@ -1,22 +1,22 @@
 [
   {
     "id": "1",
-    "title": "Prelegentów specjalistów",
+    "title": "Specialist speakers",
     "number": 16
   },
   {
     "id": "2",
-    "title": "Wyszkolonych ludzi",
+    "title": "Trained people",
     "number": 853
   },
   {
     "id": "3",
-    "title": "Zrealizowanych godzin wykładów",
+    "title": "Completed lecture hours",
     "number": 3210
   },
   {
     "id": "4",
-    "title": "Zarobionych pieniędzy",
+    "title": "Earned money",
     "number": 12003210
   }
 ]

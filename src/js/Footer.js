@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer__container container">
                 <div className="footer__info">
-                    <a href="/" className="logo">CryptoKurs</a>
+                    <a href="/" className="logo">CryptoCourse</a>
                     <span className="footer__copy">© 2021 CryptoKurs LTD, All Rights Reserved</span>
                 </div>
                 <div className="footer__icons">

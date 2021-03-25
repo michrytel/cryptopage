@@ -26,7 +26,7 @@ const BrandSwiper = () => {
     };
     return (
         <div className="brands__container">
-                    <p className="brands__title">Nasi partnerzy:</p>
+                    <p className="brands__title">Our partners:</p>
             <div className="brands__swiper">
                     <ul className="brands__swiper-list">
                         <Swiper {...params}>

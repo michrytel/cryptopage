@@ -17,9 +17,9 @@ const CurrencyTable = () => {
     return (
         <div className="currency__table-container">
             <div className="coin__search">
-                <h2>Sprawdź na których kryptowalutach uczymy grać</h2>
+                <h2>Check on which cryptocurrencies we teach to play</h2>
                 <form>
-                    <input type="text" placeholder="Wyszukaj" className="coin__search-input" onChange={handleChange}/>
+                    <input type="text" placeholder="Search" className="coin__search-input" onChange={handleChange}/>
                 </form>
             </div>
             <div className="coin__list">

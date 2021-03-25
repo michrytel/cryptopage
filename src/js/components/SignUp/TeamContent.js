@@ -7,7 +7,7 @@ const TeamContent = () => {
         <section className="team">
             <div className="team__container">
                 <h2 className="team__title">
-                    Poznaj nas!
+                    Meet us!
                 </h2>
                 <img
                     src={teamTitle}
@@ -15,7 +15,7 @@ const TeamContent = () => {
                     className="team__title-image"
                 />
                 <strong className="team__title">
-                    Zespół CryptoKurs
+                    CryptoCourse Team
                 </strong>
                 <p className="team__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eaque eligendi fugit minima nostrum obcaecati odit officia porro possimus, provident quo quos temporibus vel voluptates?</p>
 

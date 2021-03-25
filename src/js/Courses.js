@@ -8,7 +8,7 @@ const Courses = () => {
             <CourseInfo/>
             <CourseChart/>
             <div className="opening__content">
-                <a href="/signup" className="opening__btn">Zapisz się już dziś!</a>
+                <a href="/signup" className="opening__btn">Sign up today!</a>
             </div>
             <CurrencyTicker/>
         </>
